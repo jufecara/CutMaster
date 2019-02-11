@@ -27,9 +27,10 @@
             "scripts": []
           },
           "configurations": {
-            "production": {
+            "production-en": {
               "optimization": true,
               "outputHashing": "all",
+              "outputPath": "dist/en/",
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
@@ -42,7 +43,35 @@
                   "replace": "src/environments/environment.ts",
                   "with": "src/environments/environment.prod.ts"
                 }
-              ]
+              ],
+              "baseHref": "/en/",
+              "i18nFile": "src/locale/messages.en.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "en",
+              "i18nMissingTranslation": "error"
+            },
+            "production-es": {
+              "optimization": true,
+              "outputHashing": "all",
+              "outputPath": "dist/es/",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "baseHref": "/es/",
+              "i18nFile": "src/locale/messages.es.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "es",
+              "i18nMissingTranslation": "error"
             }
           }
         },
@@ -52,8 +81,11 @@
             "browserTarget": "cut-master:build"
           },
           "configurations": {
-            "production": {
-              "browserTarget": "cut-master:build:production"
+            "en": {
+              "browserTarget": "cut-master:build:production-en"
+            },
+            "es": {
+              "browserTarget": "cut-master:build:production-es"
             }
           }
         },

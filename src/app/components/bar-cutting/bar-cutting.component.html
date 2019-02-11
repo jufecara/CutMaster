@@ -1,26 +1,26 @@
 <mat-card>
   <mat-card-title>
     <mat-icon>build</mat-icon>
-    Saw Setup
+    <ng-container i18n="@@sawSetup">Saw Setup</ng-container>
   </mat-card-title>
 
   <table style="width: 100%">
     <tr>
       <td>
         <mat-form-field>
-          <input matInput placeholder="Extrusion Length" type="number" [(ngModel)]="extrusionLength">
+          <input matInput placeholder="Extrusion Length" type="number" [(ngModel)]="extrusionLength" i18n-placeholder="@@extrusionLenght">
           <span matSuffix>mm</span>
         </mat-form-field>
       </td>
       <td>
         <mat-form-field>
-          <input matInput placeholder="Saw Blade Thickness" type="number" [(ngModel)]="sawBlade">
+          <input matInput placeholder="Saw Blade Thickness" type="number" [(ngModel)]="sawBlade" i18n-placeholder="@@sawBlade">
           <span matSuffix>mm</span>
         </mat-form-field>
       </td>
       <td>
         <mat-form-field>
-          <input matInput placeholder="Smallest Remnant" type="number" [(ngModel)]="smallestRemnant">
+          <input matInput placeholder="Smallest Remnant" type="number" [(ngModel)]="smallestRemnant" i18n-placeholder="@@smallestRemnant">
           <span matSuffix>mm</span>
         </mat-form-field>
       </td>
@@ -33,7 +33,7 @@
 <mat-card>
   <mat-card-title>
     <mat-icon>list</mat-icon>
-    Part List
+    <ng-container i18n="@@partList">Part List</ng-container>
 
     <div style="float: right; text-align: right;">
       <button mat-icon-button (click)="addPart()">
@@ -56,18 +56,18 @@
       </td>
       <td>
         <mat-form-field>
-          <input matInput placeholder="Part Name" [(ngModel)]="part.name" [disabled]="!part.enabled">
+          <input matInput placeholder="Part Name" [(ngModel)]="part.name" [disabled]="!part.enabled" i18n-placeholder="@@partName">
         </mat-form-field>
       </td>
       <td>
         <mat-form-field>
-          <input matInput placeholder="Length" type="number" [(ngModel)]="part.length" [disabled]="!part.enabled">
+          <input matInput placeholder="Length" type="number" [(ngModel)]="part.length" [disabled]="!part.enabled" i18n-placeholder="@@length">
           <span matSuffix>mm</span>
         </mat-form-field>
       </td>
       <td>
         <mat-form-field>
-          <input matInput placeholder="Quantity" type="number" [(ngModel)]="part.quantity" [disabled]="!part.enabled">
+          <input matInput placeholder="Quantity" type="number" [(ngModel)]="part.quantity" [disabled]="!part.enabled" i18n-placeholder="@@quantity">
         </mat-form-field>
       </td>
       <td>
@@ -88,10 +88,10 @@
 <mat-card *ngIf="result.length > 0">
   <mat-card-title>
     <mat-icon>line_style</mat-icon>
-    Result
+    <ng-container i18n="@@result">Result</ng-container>
   </mat-card-title>
 
-  Number of Bars: {{result.length}}<br/>
+  <ng-container i18n="@@numberOfBars">Number of Bars</ng-container>: {{result.length}}<br/>
 
   <cm-bar *ngFor="let bar of result; let i = index" [data]="bar" [length]="extrusionLength" [index]="i"></cm-bar>
 </mat-card>

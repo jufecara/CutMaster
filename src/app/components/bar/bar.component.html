@@ -1,5 +1,5 @@
 <mat-card>
-  <mat-card-title>Bar #{{index + 1}}</mat-card-title>
+  <mat-card-title><ng-container i18n="@@bar">Bar</ng-container> #{{index + 1}}</mat-card-title>
 
   <div class="diagram">
     <ng-container *ngFor="let part of data.parts; let i = index">
@@ -18,11 +18,11 @@
       <td class="numeric">{{part.length | number:'.1-1'}}mm</td>
     </tr>
     <tr class="small">
-      <th>Remnant</th>
+      <th><ng-container i18n="@@remnant">Remnant</ng-container></th>
       <td class="numeric">{{data.remnant | number:'.1-1'}}mm</td>
     </tr>
     <tr class="small">
-      <th>Waste</th>
+      <th><ng-container i18n="@@waste">Waste</ng-container></th>
       <td class="numeric">{{getWaste() | number:'.1-1'}}mm</td>
     </tr>
     </tbody>

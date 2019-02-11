@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="sawSetup" datatype="html">
+        <source>Saw Setup</source>
+        <target>Configuración de la sierra</target>
+        <note priority="1" from="description">An introduction header for this sample</note>
+        <note priority="1" from="meaning">User welcome</note>
+      </trans-unit>
+
+      <trans-unit id="extrusionLenght" datatype="html">
+        <source>Extrusion Length</source>
+        <target>Tamaño del perfil</target>
+        <note priority="1" from="description">Extrusion Length</note>
+        <note priority="1" from="meaning">Extrusion Length</note>
+      </trans-unit>
+
+      <trans-unit id="sawBlade" datatype="html">
+        <source>Saw Blade</source>
+        <target>Espesor de la sierra</target>
+        <note priority="1" from="description">Espesor de la sierra</note>
+        <note priority="1" from="meaning">Espesor de la sierra</note>
+      </trans-unit>
+
+      <trans-unit id="smallestRemnant" datatype="html">
+        <source>Smallest Remnant</source>
+        <target>Remanente más pequeño</target>
+        <note priority="1" from="description">Remanente más pequeño</note>
+        <note priority="1" from="meaning">Remanente más pequeño</note>
+      </trans-unit>
+
+      <trans-unit id="partName" datatype="html">
+        <source>Part Name</source>
+        <target>Nombre de la parte</target>
+        <note priority="1" from="description">Nombre de la parte</note>
+        <note priority="1" from="meaning">Nombre de la parte</note>
+      </trans-unit>
+
+      <trans-unit id="partList" datatype="html">
+        <source>Part List</source>
+        <target>Listado de partes</target>
+        <note priority="1" from="description">Listado de partes</note>
+        <note priority="1" from="meaning">Listado de partes</note>
+      </trans-unit>
+
+      <trans-unit id="length" datatype="html">
+        <source>Length</source>
+        <target>Longitud</target>
+        <note priority="1" from="description">Longitud</note>
+        <note priority="1" from="meaning">Longitud</note>
+      </trans-unit>
+
+      <trans-unit id="quantity" datatype="html">
+        <source>Quantity</source>
+        <target>Cantidad</target>
+        <note priority="1" from="description">Cantidad</note>
+        <note priority="1" from="meaning">Cantidad</note>
+      </trans-unit>
+
+      <trans-unit id="result" datatype="html">
+        <source>Result</source>
+        <target>Resultado</target>
+        <note priority="1" from="description">Resultado</note>
+        <note priority="1" from="meaning">Resultado</note>
+      </trans-unit>
+
+      <trans-unit id="numberOfBars" datatype="html">
+        <source>Number of Bars</source>
+        <target>Número de Barras</target>
+        <note priority="1" from="description">Número de Barras</note>
+        <note priority="1" from="meaning">Número de Barras</note>
+      </trans-unit>
+
+      <trans-unit id="bar" datatype="html">
+        <source>Bar</source>
+        <target>Barra</target>
+        <note priority="1" from="description">Barra</note>
+        <note priority="1" from="meaning">Barra</note>
+      </trans-unit>
+
+      <trans-unit id="remnant" datatype="html">
+        <source>Remnant</source>
+        <target>Remanente</target>
+        <note priority="1" from="description">Remanente</note>
+        <note priority="1" from="meaning">Remanente</note>
+      </trans-unit>
+
+      <trans-unit id="waste" datatype="html">
+        <source>Waste</source>
+        <target>Desperdicio</target>
+        <note priority="1" from="description">Desperdicio</note>
+        <note priority="1" from="meaning">Desperdicio</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
